@@ -172,7 +172,7 @@
     getWaypoint: function getWaypoint() {
       $('[data-waypoint="init"]').each(function() {
         var el = $(this);
-        var animateInit = el.children().find('[data-waypoint-animate="init"]');
+        var animateInit = $('[data-waypoint-animate="init"]', el);
 
         animateInit.addClass('vhidden');
 
