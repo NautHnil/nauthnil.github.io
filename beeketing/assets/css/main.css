@@ -6946,7 +6946,7 @@ img {
 }
 
 @media (max-width: 991px) {
-  .animated {
+  .animated[data-waypoint-animate="init"] {
     -webkit-animation: unset !important;
             animation: unset !important;
   }
