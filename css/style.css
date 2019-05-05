@@ -1,0 +1,45 @@
+body {
+  position: relative;
+  background: #f4f4f4 url("https://picsum.photos/1920/920?random") center top repeat-x fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: #444948;
+  scroll-behavior: smooth;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: -526px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+  height: 526px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.about-me {
+  padding-top: 120px;
+}
+.about-me img {
+  width: 80px;
+}
+
+.socials a {
+  display: inline-block;
+  font-size: 24px;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  margin-top: 526px;
+  background: #fff;
+}
